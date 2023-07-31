@@ -1,0 +1,148 @@
+.form {
+    background: linear-gradient(
+      135deg,
+      rgb(250, 143, 3) 0%,
+      rgb(246, 17, 86) 100%
+    );
+    margin: auto;
+    justify-content: center;
+    margin-top: 10rem;
+    display: block;
+    width: fit-content;
+    padding-left: 3rem;
+    padding-top: 1rem;
+    padding-right: 3rem;
+    padding-bottom: 1rem;
+    border-radius: 10px;
+  }
+  .Labell {
+    margin-right: 17.5rem;
+    text-align: left;
+    font-weight: 900;
+  }
+  .formIP {
+    width: 350px;
+    height: 30px;
+    margin-top: 1rem;
+    border: none;
+    border-radius: 5px;
+    color: black;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: start;
+    outline: none;
+    border-color: transparent;
+  }
+  .newUser {
+    color: white;
+  }
+  .subButton {
+    margin-top: 1rem;
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+    font-size: 17px;
+    background: linear-gradient(
+      135deg,
+      rgb(250, 164, 3) 0%,
+      rgb(17, 246, 181) 100%
+    );
+    cursor: pointer;
+    border: none;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.8rem;
+  }
+  
+  /* Radio Button CSS */
+  
+  .wrapper {
+    margin-top: 1rem;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    display: inline-flex;
+    background: linear-gradient(
+      135deg,
+      rgb(246, 17, 86) 0%,
+      rgb(250, 143, 3) 100%
+  );
+    height: 20px;
+    width: 200px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    padding: 20px 15px;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+  }
+  .wrapper .option {
+    box-shadow: black;
+    background: #fff;
+    height: 2rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 0 10px;
+    border: 2px solid lightgrey;
+    transition: all 0.3s ease;
+  }
+  .wrapper .option .dot {
+    height: 20px;
+    width: 20px;
+    background: #d9d9d9;
+    border-radius: 50%;
+    position: relative;
+  }
+  .wrapper .option .dot::before {
+    position: absolute;
+    content: "";
+    top: 4px;
+    left: 4px;
+    width: 12px;
+    height: 12px;
+    background: linear-gradient(
+      135deg,
+      rgb(115, 250, 81) 0%,
+      rgb(50, 99, 70) 100%
+    );
+    border-radius: 50%;
+    opacity: 0;
+    transform: scale(1.5);
+    transition: all 0.3s ease;
+  }
+  input[type="radio"] {
+    display: none;
+  }
+  #option-1:checked:checked ~ .option-1,
+  #option-2:checked:checked ~ .option-2 {
+    border-color: black;
+    background: linear-gradient(
+      135deg,
+      rgb(115, 250, 81) 0%,
+      rgb(50, 99, 70) 100%
+    );
+  }
+  #option-1:checked:checked ~ .option-1 .dot,
+  #option-2:checked:checked ~ .option-2 .dot {
+    background: #fff;
+  }
+  #option-1:checked:checked ~ .option-1 .dot::before,
+  #option-2:checked:checked ~ .option-2 .dot::before {
+    opacity: 1;
+    transform: scale(1);
+  }
+  .wrapper .option span {
+    font-size: 20px;
+    color: #808080;
+  }
+  #option-1:checked:checked ~ .option-1 span,
+  #option-2:checked:checked ~ .option-2 span {
+    color: #fff;
+    margin-left: 5px;
+  }
+  
